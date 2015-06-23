@@ -1,0 +1,27 @@
+#Setting up GIT
+
+https://help.github.com/articles/caching-your-github-password-in-git/
+
+##git basics
+git clone [https://path/to/git-repo.git]
+//make changes
+git add . --all
+git commit -m "first message"
+git push
+
+//or
+
+git init
+//make changes
+git add . --all
+git commit -m "first message"
+git remote origin master [https://path/to/git-repo.git]
+git push origin master
+//next push will already be set for origin master
+
+
+
+
+
+
+
