@@ -19,6 +19,11 @@ git remote add origin [https://path/to/git-repo.git]
 git push origin master
 //next push will already be set for origin master which is also what your git fetch/pull will be set for.
 
+//next change is just
+git add . --all
+git commit -m "message here"
+git push
+
 //The git book
 http://git-scm.com/book/en/v2
 
@@ -31,6 +36,16 @@ git submodule init
 //then run the following command to have each submodule clone into the already created directory location
 git submodule update
 //submodule target revision will be downloaded.
+
+//to make local changes to submodules from inside the main project, cd to submodule dir, then 
+git checkout [branch e.g. stable or master or...]
+//make your changes as needed
+//then 
+git add/commit/push as usual
+//then cd back to main project
+git add . --all
+git commit -m "some submodule update message"
+git push
 
 
 
