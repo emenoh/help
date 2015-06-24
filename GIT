@@ -15,7 +15,7 @@ git init
 //make changes
 git add . --all
 git commit -m "first message"
-git remote add origin master [https://path/to/git-repo.git]
+git remote add origin [https://path/to/git-repo.git]
 git push origin master
 //next push will already be set for origin master
 
