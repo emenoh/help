@@ -19,7 +19,16 @@ git remote add origin [https://path/to/git-repo.git]
 git push origin master
 //next push will already be set for origin master
 
+//The git book
+http://git-scm.com/book/en/v2
 
+
+//submodules
+//cd to where you want the submodule to be located then
+git submodule add [https://path/to/git-repo.git]
+//cd to submodule directory (which will be empty) and then
+git submodule init
+git submodule update
 
 
 
