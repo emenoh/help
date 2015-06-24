@@ -17,7 +17,7 @@ git add . --all
 git commit -m "first message"
 git remote add origin [https://path/to/git-repo.git]
 git push origin master
-//next push will already be set for origin master
+//next push will already be set for origin master which is also what your git fetch/pull will be set for.
 
 //The git book
 http://git-scm.com/book/en/v2
@@ -26,9 +26,11 @@ http://git-scm.com/book/en/v2
 //submodules
 //cd to where you want the submodule to be located then
 git submodule add [https://path/to/git-repo.git]
-//cd to submodule directory (which will be empty) and then
+//after adding all submodules run this to initialize them all at once
 git submodule init
+//then run the following command to have each submodule clone into the already created directory location
 git submodule update
+//submodule target revision will be downloaded.
 
 
 
