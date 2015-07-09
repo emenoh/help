@@ -6,9 +6,18 @@ npm install -g meteor
 npm install -g iron-meteor
 //https://github.com/iron-meteor/iron-cli
 meteor create [appName]
-meteor add iron:router, aldeed:collection2, underscore, jquery, moment:moment
+meteor add aldeed:collection2 underscore jquery momentjs:moment
 //underscore will be swapped with lodash-underscore soon
 meteor remove autopublish, insecure
 
 The just start making routes, collections, template-views and controllers.
 //http://docs.meteor.com
+
+More good packages
+
+less
+four-seven:scss
+accounts-base
+accounts-password
+matb33:collection-hooks
+jbrousseau:meteor-collection-behaviours
