@@ -1,6 +1,8 @@
 #Setting up GIT
 
 https://help.github.com/articles/caching-your-github-password-in-git/
+Setup credential cacheing
+git config --global credential.helper osxkeychain
 
 ##git basics
 git clone [https://path/to/git-repo.git]
