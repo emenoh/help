@@ -21,3 +21,31 @@ accounts-base
 accounts-password
 matb33:collection-hooks
 jbrousseau:meteor-collection-behaviours
+
+Deploying to Modulus
+https://modulus.desk.com/customer/portal/articles/1647770-using-meteor-with-modulus?b_id=9670
+//installe modulus CLI
+npm install -g modulus
+
+//create a project with 192MB of memory in a Node runtime
+modulus project create [name] -s 192 -r Node.js
+//navigate to the meteor project directory
+cd /path/to/project
+modulus project [name] deploy
+//wait for it to package and deploy the app
+//set a few environment variables
+modulus env set MONGO_URL \
+  "mongodb://user:pass@proximus.modulusmongo.net:27017/8Y4fgyd \
+  ?autoReconnect=true&connectTimeoutMS=60000"
+  
+modulus env set ROOT_URL http://my-meteor-project-9339.onmodulus.net
+//wait
+modulus project restart
+//wait
+//visit app at http://my-meteor-project-9339.onmodulus.net
+
+
+
+
+
+
